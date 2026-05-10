@@ -3,13 +3,22 @@ function Home() {
       <div className="min-h-screen bg-white">
   
         {/* Navbar */}
-        <nav className="flex items-center justify-between px-8 py-4 bg-white shadow-sm sticky top-0 z-50">
-          <h1 className="text-2xl font-bold text-green-700">Madinah Arabic</h1>
-          <div className="flex gap-4">
-            <a href="/books" className="text-gray-600 hover:text-green-700 font-medium">Books</a>
-            <a href="/auth" className="bg-green-700 text-white px-4 py-2 rounded-lg hover:bg-green-800">Get Started</a>
+      <nav className="flex items-center justify-between px-8 py-4 bg-white shadow-sm sticky top-0 z-50">
+        <div className="flex items-center gap-2">
+          <div className="w-9 h-9 bg-green-700 rounded-lg flex items-center justify-center">
+            <span className="text-white font-bold text-lg" dir="rtl">م</span>
           </div>
-        </nav>
+          <h1 className="text-2xl font-bold text-green-700">Madinah Arabic</h1>
+        </div>
+        <div className="flex items-center gap-6">
+          <a href="/books" className="text-gray-600 hover:text-green-700 font-medium transition-colors">Books</a>
+          <a href="/dashboard" className="text-gray-600 hover:text-green-700 font-medium transition-colors">Dashboard</a>
+          <a href="/auth" className="text-gray-600 hover:text-green-700 font-medium transition-colors">Log In</a>
+          <a href="/auth" className="bg-green-700 text-white px-5 py-2 rounded-lg hover:bg-green-800 font-semibold transition-colors shadow-sm">
+            Get Started
+          </a>
+        </div>
+      </nav>
   
         {/* Hero Section */}
         <section className="flex flex-col items-center justify-center text-center px-8 py-24 bg-green-50">
